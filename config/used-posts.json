@@ -271,11 +271,19 @@
       "upvotes": 8,
       "usedAt": "2025-08-26T16:19:25.127Z",
       "url": "https://reddit.com/r/Tiktokhelp/comments/1n02sim/lost_a_loyal_user_today/"
+    },
+    {
+      "id": "1n0p009",
+      "title": "Inching closer to replacing my 9-5",
+      "subreddit": "Tiktokhelp",
+      "upvotes": 5,
+      "usedAt": "2025-08-26T17:22:11.929Z",
+      "url": "https://reddit.com/r/Tiktokhelp/comments/1n0p009/inching_closer_to_replacing_my_95/"
     }
   ],
   "lastCleanup": "2025-08-24T05:56:58Z",
   "stats": {
-    "totalUsed": 37,
+    "totalUsed": 38,
     "cleanupCount": 10
   }
 }
