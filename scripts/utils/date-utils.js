@@ -63,11 +63,11 @@ class DateUtils {
   }
 
   /**
-   * frontmatter용 날짜시분 형식 (2025-08-23T14:30:00) - UTC 기준
+   * frontmatter용 날짜시분 형식 (2025-08-23T14:30:00Z) - UTC 기준
    */
   static getDateTimeForFrontmatter(date = new Date()) {
     const d = new Date(date);
-    return d.toISOString().replace(/\.\d{3}Z$/, '');
+    return d.toISOString().replace(/\.\d{3}Z$/, 'Z');
   }
 
   /**

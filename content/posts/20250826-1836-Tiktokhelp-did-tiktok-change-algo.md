@@ -1,7 +1,7 @@
 ---
 title: "Has TikTok's Algorithm Changed? Discover the Latest Updates!"
 slug: "20250826-1836-Tiktokhelp-did-tiktok-change-algo"
-date: "2025-08-26T18:36:28"
+date: "2025-08-26T18:36:28Z"
 description: "r/Tiktokhelp에서 화제가 된 Has TikTok's Algorithm Changed? Discover the Latest Updates!에 대한 깊이 있는 분석과 인사이트"
 tags: ["TikTok", "Viral", "Content Creation", "Social Media"]
 category: "Tiktokhelp"
