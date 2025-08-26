@@ -5,12 +5,14 @@
 export function getRelativeTime(date: string | Date): string {
   const now = new Date();
   const targetDate = new Date(date);
+  
+  // UTC 기준으로 시간 계산
   const diffInMs = now.getTime() - targetDate.getTime();
   const diffInSeconds = Math.floor(diffInMs / 1000);
 
-  // 미래 날짜인 경우 (음수 값) 10분 전으로 표시
+  // 미래 날짜인 경우 (음수 값) 방금 전으로 표시
   if (diffInSeconds < 0) {
-    return 'Posted 10 minutes ago';
+    return 'Posted just now';
   }
 
   if (diffInSeconds < 60) {

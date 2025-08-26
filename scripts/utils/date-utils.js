@@ -5,30 +5,18 @@
 
 class DateUtils {
   /**
-   * 한국 시간 객체 반환 (UTC+9)
-   */
-  static getKoreanTime(date = new Date()) {
-    // 입력된 시간을 한국 시간대로 변환
-    return new Date(date.toLocaleString("en-US", {timeZone: "Asia/Seoul"}));
-  }
-
-  /**
-   * 현재 날짜를 YYYY-MM-DD 형식으로 반환 (한국 시간 기준)
+   * 현재 날짜를 YYYY-MM-DD 형식으로 반환 (UTC 기준)
    */
   static getToday() {
-    const koreanTime = this.getKoreanTime();
-    const year = koreanTime.getFullYear();
-    const month = String(koreanTime.getMonth() + 1).padStart(2, '0');
-    const day = String(koreanTime.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
+    const now = new Date();
+    return now.toISOString().split('T')[0];
   }
 
   /**
-   * 현재 날짜시간을 ISO 형식으로 반환 (한국 시간 기준)
+   * 현재 날짜시간을 ISO 형식으로 반환 (UTC 기준)
    */
   static getNow() {
-    const koreanTime = this.getKoreanTime();
-    return koreanTime.toISOString();
+    return new Date().toISOString();
   }
 
   /**
@@ -46,7 +34,7 @@ class DateUtils {
    * 파일명에 사용할 날짜 형식 (20250121)
    */
   static getDateForFilename(date = new Date()) {
-    const d = this.getKoreanTime(date);
+    const d = new Date(date);
     const year = d.getFullYear();
     const month = String(d.getMonth() + 1).padStart(2, '0');
     const day = String(d.getDate()).padStart(2, '0');
@@ -57,7 +45,7 @@ class DateUtils {
    * 파일명에 사용할 날짜시분 형식 (20250121-1430)
    */
   static getDateTimeForFilename(date = new Date()) {
-    const d = this.getKoreanTime(date);
+    const d = new Date(date);
     const year = d.getFullYear();
     const month = String(d.getMonth() + 1).padStart(2, '0');
     const day = String(d.getDate()).padStart(2, '0');
@@ -70,25 +58,16 @@ class DateUtils {
    * 슬러그용 날짜 형식 (2025-01-21)
    */
   static getDateForSlug(date = new Date()) {
-    const d = this.getKoreanTime(date);
-    const year = d.getFullYear();
-    const month = String(d.getMonth() + 1).padStart(2, '0');
-    const day = String(d.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
+    const d = new Date(date);
+    return d.toISOString().split('T')[0];
   }
 
   /**
-   * frontmatter용 날짜시분 형식 (2025-08-23T14:30:00)
+   * frontmatter용 날짜시분 형식 (2025-08-23T14:30:00) - UTC 기준
    */
   static getDateTimeForFrontmatter(date = new Date()) {
-    const d = this.getKoreanTime(date);
-    const year = d.getFullYear();
-    const month = String(d.getMonth() + 1).padStart(2, '0');
-    const day = String(d.getDate()).padStart(2, '0');
-    const hour = String(d.getHours()).padStart(2, '0');
-    const minute = String(d.getMinutes()).padStart(2, '0');
-    const second = String(d.getSeconds()).padStart(2, '0');
-    return `${year}-${month}-${day}T${hour}:${minute}:${second}`;
+    const d = new Date(date);
+    return d.toISOString().replace(/\.\d{3}Z$/, '');
   }
 
   /**
