@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { PostSummary } from '@/lib/posts'
 import SearchBox from './SearchBox'
 import Pagination from './Pagination'
-import { getRelativeTime } from '@/lib/time-utils'
+import { RelativeTime } from '@/components/RelativeTime'
 import { getUIColorClasses, getUIText } from '@/lib/config'
 
 interface PostGridProps {
@@ -138,7 +138,7 @@ export default function PostGrid({
                 <div className="p-6">
                   <div className="flex items-center mb-3 text-sm text-gray-500">
                     <div className="w-2 h-2 bg-primary-600 rounded-full mr-2"></div>
-                    <time className="font-medium">{getRelativeTime(post.date)}</time>
+                    <RelativeTime date={post.date} className="font-medium" />
                   </div>
                   
                   <h3 className="text-lg font-bold mb-3 line-clamp-2 leading-tight">

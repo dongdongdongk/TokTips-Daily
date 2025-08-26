@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import PostGrid from '@/components/PostGrid'
 import { getBranding, getUIText, getUIColorClasses } from '@/lib/config'
-import { getRelativeTime } from '@/lib/time-utils'
+import { RelativeTime } from '@/components/RelativeTime'
 
 export default async function HomePage() {
   const posts = await getAllPosts()
@@ -61,7 +61,7 @@ export default async function HomePage() {
               <div className="p-8 lg:p-10">
                 <div className="flex items-center mb-6 text-sm text-gray-600">
                   <time className="font-medium">
-                    {getRelativeTime(featuredPost.date)}
+                    <RelativeTime date={featuredPost.date} />
                   </time>
                   <span className="mx-3 text-gray-300">•</span>
                   <span className="text-primary-600 font-semibold">{uiText.featuredArticleLabel}</span>
@@ -118,7 +118,7 @@ export default async function HomePage() {
                           {post.excerpt}
                         </p>
                         <div className="flex items-center text-xs text-gray-500">
-                          <time>{getRelativeTime(post.date)}</time>
+                          <RelativeTime date={post.date} />
                         </div>
                       </div>
                     </div>
