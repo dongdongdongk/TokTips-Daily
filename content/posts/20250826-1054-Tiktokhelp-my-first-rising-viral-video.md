@@ -6,7 +6,8 @@ description: "r/Tiktokhelp에서 화제가 된 My First Viral Video: How I Captu
 tags: ["TikTok", "Viral", "Content Creation", "Social Media"]
 category: "Tiktokhelp"
 author: "TokTips Team"
-image: "https://picsum.photos/1200/600?random=1756205666658"
+image: "https://images.unsplash.com/photo-1661347998996-dcf102498c63?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=rb-4.1.0&q=80&w=1080"
+
 source:
   platform: "Reddit"
   subreddit: "Tiktokhelp"
@@ -31,7 +32,7 @@ Once you’ve hit the viral jackpot, it’s important to figure out why. Was it 
 
 Also, did you know you can make money from TikTok? There are communities where you can learn how to get paid for your content. Joining a group can give you tips on how to turn your viral fame into cash. It's like finding a treasure map that guides you to hidden rewards.
 
-![Viral Image](https://picsum.photos/1200/600?random=1756205667183)
+![phone](https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=rb-4.1.0&q=80&w=1080)
 
 #### Bringing It All Together
 
