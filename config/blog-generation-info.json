@@ -1,0 +1,32 @@
+{
+  "date": "2025-08-26",
+  "timestamp": "2025-08-26T06:14:48.498Z",
+  "executionTimeMs": 21060,
+  "blog": {
+    "title": "TikTok View Count Glitch: What's Happening Now?",
+    "filename": "20250826-1514-Tiktokhelp-so-were-all-in-agreement-tikto.md",
+    "path": "F:\\2025WebProject\\BlogProject\\TikTokBlog\\content\\posts\\20250826-1514-Tiktokhelp-so-were-all-in-agreement-tikto.md",
+    "contentLength": 3496,
+    "wordCount": 454
+  },
+  "source": {
+    "subreddit": "Tiktokhelp",
+    "originalTitle": "So we’re all in agreement TikToks views are broken rn",
+    "originalUrl": "https://reddit.com/r/Tiktokhelp/comments/1mzxztw/so_were_all_in_agreement_tiktoks_views_are_broken/",
+    "engagement": {
+      "upvotes": 10,
+      "comments": 21
+    }
+  },
+  "stats": {
+    "aiModel": "gpt-4",
+    "promptTokens": "estimated",
+    "completionTokens": "estimated",
+    "totalCost": "estimated"
+  },
+  "metadata": {
+    "generatedBy": "generate-reddit-blog.js",
+    "version": "1.0.0",
+    "aiGenerator": "openai-reddit-generator"
+  }
+}
