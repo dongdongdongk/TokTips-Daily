@@ -9,7 +9,7 @@ const siteConfig = {
     name: "TokTips Daily",
     title: "TokTips Daily - TikTok Trends & Creator Tips",
     description: "Latest TikTok trends, viral video analysis, and creator growth strategies updated daily",
-    url: "https://toktips.roono.net/",
+    url: "https://toktips.roono.net",
     logo: "/logo.png",
     favicon: "/favicon.ico"
   },
