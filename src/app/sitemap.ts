@@ -1,9 +1,11 @@
 import { getAllPosts } from '@/lib/posts'
+import { getSiteInfo } from '@/lib/config'
 import { MetadataRoute } from 'next'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getAllPosts()
-  const baseUrl = 'https://webmaker-ai-blog.vercel.app'
+  const siteInfo = getSiteInfo()
+  const baseUrl = siteInfo.url
   
   const staticPages = [
     {
