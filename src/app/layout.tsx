@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { generateSEOMetadata, generateJSONLD, StructuredData } from '@/components/SEO'
 import { getSiteInfo, getSEOConfig, getTheme } from '@/lib/config'
+import { Analytics } from '@vercel/analytics/next'
 
 const siteInfo = getSiteInfo()
 const seoConfig = getSEOConfig()
@@ -41,6 +42,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
