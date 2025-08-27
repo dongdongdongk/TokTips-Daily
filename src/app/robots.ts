@@ -1,7 +1,9 @@
 import { MetadataRoute } from 'next'
+import { getSiteInfo } from '@/lib/config'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://webmaker-ai-blog.vercel.app'
+  const siteInfo = getSiteInfo()
+  const baseUrl = siteInfo.url
   
   return {
     rules: [
