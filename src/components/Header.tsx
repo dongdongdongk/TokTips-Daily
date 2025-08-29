@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { getBranding, getNavigation } from '@/lib/config'
 
 export default function Header() {
@@ -10,8 +11,15 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link 
             href="/" 
-            className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent hover:from-primary-700 hover:to-secondary-700 transition-all duration-200"
+            className="flex items-center gap-3 text-2xl lg:text-3xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent hover:from-primary-700 hover:to-secondary-700 transition-all duration-200"
           >
+            <Image
+              src="/logo.png"
+              alt={branding.siteName}
+              width={40}
+              height={40}
+              className="rounded-lg"
+            />
             {branding.siteName}
           </Link>
           
