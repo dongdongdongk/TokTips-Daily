@@ -375,11 +375,19 @@
       "upvotes": 6,
       "usedAt": "2025-08-29T13:22:42.677Z",
       "url": "https://reddit.com/r/Tiktokhelp/comments/1n2uwqp/low_views_but_good_engagement/"
+    },
+    {
+      "id": "1n2qecr",
+      "title": "Am I shadow banned or am I doing something wrong",
+      "subreddit": "Tiktokhelp",
+      "upvotes": 5,
+      "usedAt": "2025-08-29T13:29:26.499Z",
+      "url": "https://reddit.com/r/Tiktokhelp/comments/1n2qecr/am_i_shadow_banned_or_am_i_doing_something_wrong/"
     }
   ],
   "lastCleanup": "2025-08-24T05:56:58Z",
   "stats": {
-    "totalUsed": 50,
+    "totalUsed": 51,
     "cleanupCount": 10
   }
 }
