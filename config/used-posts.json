@@ -367,11 +367,35 @@
       "upvotes": 5,
       "usedAt": "2025-08-29T11:46:28.335Z",
       "url": "https://reddit.com/r/Tiktokhelp/comments/1n2y7ax/my_account_just_got_locked/"
+    },
+    {
+      "id": "1n2uwqp",
+      "title": "Low views but good engagement?",
+      "subreddit": "Tiktokhelp",
+      "upvotes": 6,
+      "usedAt": "2025-08-29T13:22:42.677Z",
+      "url": "https://reddit.com/r/Tiktokhelp/comments/1n2uwqp/low_views_but_good_engagement/"
+    },
+    {
+      "id": "1n2qecr",
+      "title": "Am I shadow banned or am I doing something wrong",
+      "subreddit": "Tiktokhelp",
+      "upvotes": 5,
+      "usedAt": "2025-08-29T13:29:26.499Z",
+      "url": "https://reddit.com/r/Tiktokhelp/comments/1n2qecr/am_i_shadow_banned_or_am_i_doing_something_wrong/"
+    },
+    {
+      "id": "1n37i9s",
+      "title": "Am I wasting my time trying to put out long-form content?",
+      "subreddit": "Tiktokhelp",
+      "upvotes": 3,
+      "usedAt": "2025-08-29T17:20:10.299Z",
+      "url": "https://reddit.com/r/Tiktokhelp/comments/1n37i9s/am_i_wasting_my_time_trying_to_put_out_longform/"
     }
   ],
   "lastCleanup": "2025-08-24T05:56:58Z",
   "stats": {
-    "totalUsed": 49,
+    "totalUsed": 52,
     "cleanupCount": 10
   }
 }
