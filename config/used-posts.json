@@ -343,11 +343,35 @@
       "upvotes": 6,
       "usedAt": "2025-08-29T01:20:16.557Z",
       "url": "https://reddit.com/r/Tiktokhelp/comments/1n2ewvo/im_finally_able_to_monetize_my_tiktok_channel/"
+    },
+    {
+      "id": "1n2zo97",
+      "title": "Does anyone actually get how the tiktok algorithm works?",
+      "subreddit": "Tiktokhelp",
+      "upvotes": 155,
+      "usedAt": "2025-08-29T10:04:37.311Z",
+      "url": "https://reddit.com/r/Tiktokhelp/comments/1n2zo97/does_anyone_actually_get_how_the_tiktok_algorithm/"
+    },
+    {
+      "id": "1n2gx9j",
+      "title": "Can't hide comments anymore on TikTok live",
+      "subreddit": "Tiktokhelp",
+      "upvotes": 8,
+      "usedAt": "2025-08-29T11:02:56.810Z",
+      "url": "https://reddit.com/r/Tiktokhelp/comments/1n2gx9j/cant_hide_comments_anymore_on_tiktok_live/"
+    },
+    {
+      "id": "1n2y7ax",
+      "title": "My account just got locked???",
+      "subreddit": "Tiktokhelp",
+      "upvotes": 5,
+      "usedAt": "2025-08-29T11:46:28.335Z",
+      "url": "https://reddit.com/r/Tiktokhelp/comments/1n2y7ax/my_account_just_got_locked/"
     }
   ],
   "lastCleanup": "2025-08-24T05:56:58Z",
   "stats": {
-    "totalUsed": 46,
+    "totalUsed": 49,
     "cleanupCount": 10
   }
 }
