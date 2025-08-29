@@ -351,11 +351,19 @@
       "upvotes": 155,
       "usedAt": "2025-08-29T10:04:37.311Z",
       "url": "https://reddit.com/r/Tiktokhelp/comments/1n2zo97/does_anyone_actually_get_how_the_tiktok_algorithm/"
+    },
+    {
+      "id": "1n2gx9j",
+      "title": "Can't hide comments anymore on TikTok live",
+      "subreddit": "Tiktokhelp",
+      "upvotes": 8,
+      "usedAt": "2025-08-29T11:02:56.810Z",
+      "url": "https://reddit.com/r/Tiktokhelp/comments/1n2gx9j/cant_hide_comments_anymore_on_tiktok_live/"
     }
   ],
   "lastCleanup": "2025-08-24T05:56:58Z",
   "stats": {
-    "totalUsed": 47,
+    "totalUsed": 48,
     "cleanupCount": 10
   }
 }
