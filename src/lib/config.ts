@@ -190,6 +190,56 @@ export interface SiteConfig {
       partial: string
     }
   }
+  about: {
+    hero: {
+      title: string
+      subtitle: string
+      description: string
+    }
+    team: {
+      title: string
+      subtitle: string
+      members: Array<{
+        name: string
+        role: string
+        expertise: string[]
+        experience: string
+      }>
+    }
+    mission: {
+      title: string
+      content: string
+      values: Array<{
+        title: string
+        description: string
+        icon: string
+      }>
+    }
+    authority: {
+      title: string
+      credentials: string[]
+      stats: Array<{
+        number: string
+        label: string
+      }>
+    }
+    company: {
+      logo: string
+      founded: string
+      location: string
+      description: string
+      certifications: Array<{
+        name: string
+        image: string
+      }>
+    }
+    seo: {
+      title: string
+      description: string
+      keywords: string[]
+      ogImage: string
+    }
+  }
 }
 
 // 전체 설정 가져오기
@@ -359,6 +409,41 @@ export function getUIColorClasses() {
     secondary: 'text-secondary-600',
     bgPrimary: 'bg-primary-600',
     bgSecondary: 'bg-secondary-600'
+  }
+}
+
+// About 페이지 설정
+export function getAboutPageConfig() {
+  return siteConfig.about
+}
+
+// About 페이지 SEO 메타데이터 생성
+export function generateSEOMetadata() {
+  const about = getAboutPageConfig()
+  const siteInfo = getSiteInfo()
+  
+  return {
+    title: about.seo.title,
+    description: about.seo.description,
+    keywords: about.seo.keywords,
+    openGraph: {
+      title: about.seo.title,
+      description: about.seo.description,
+      url: `${siteInfo.url}/about`,
+      siteName: siteInfo.name,
+      type: 'website',
+      images: [{
+        url: `${siteInfo.url}${about.seo.ogImage}`,
+        width: 1200,
+        height: 630,
+        alt: `About ${siteInfo.name}`
+      }]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: about.seo.title,
+      description: about.seo.description,
+    }
   }
 }
 

@@ -326,10 +326,12 @@ const siteConfig = {
   navigation: {
     main: [
       { name: "Home", href: "/", external: false },
+      { name: "About", href: "/about", external: false },
       { name: "Contact", href: "/contact", external: false }
     ],
     footer: [
       { name: "Home", href: "/" },
+      { name: "About", href: "/about" },
       { name: "Latest Trends", href: "/trends" },
       { name: "Contact Us", href: "/contact" }
     ]
@@ -426,6 +428,109 @@ const siteConfig = {
       
       // 최대 태그 개수
       maxTags: 5
+    }
+  },
+
+  // === About 페이지 설정 ===
+  about: {
+    // Hero Section
+    hero: {
+      title: "TokTips Daily",
+      subtitle: "Daily updates on TikTok trends and creator insights",
+      description: "From the latest TikTok trends to global social media insights, we analyze the rapidly changing digital landscape and deliver valuable content that helps creators and brands stay ahead of the curve."
+    },
+    
+    // Team Section (Digital Marketing Hub 구조 참고)
+    team: {
+      title: "Who We Are",
+      subtitle: "TikTok trend analysts and social media experts",
+      members: [
+        {
+          name: "Content Writers",
+          role: "TikTok & Social Media Specialists",
+          expertise: ["TikTok Algorithm", "Viral Content Creation", "Creator Economy", "Social Media Trends"],
+          experience: "We analyze TikTok algorithms and viral content patterns to provide practical growth strategies for creators and brands."
+        },
+        {
+          name: "Trend Analysts",
+          role: "Data & Trend Analysis Specialists", 
+          expertise: ["Trend Forecasting", "Social Media Analytics", "Community Analysis", "Market Research"],
+          experience: "We analyze Reddit, TikTok, and social media data to discover and predict new trends in the digital space."
+        },
+        {
+          name: "Content Strategists",
+          role: "Content & Growth Specialists",
+          expertise: ["Content Strategy", "SEO Optimization", "Community Management", "Brand Development"],
+          experience: "We develop comprehensive content strategies and optimize for search engines to help reach wider audiences effectively."
+        }
+      ]
+    },
+    
+    // Mission Section
+    mission: {
+      title: "What We Do",
+      content: "We transform complex TikTok and social media trends into easy-to-understand, practical content. Rather than theoretical concepts, we share specific tips and strategies that you can actually implement.",
+      values: [
+        {
+          title: "Real-time Trends",
+          description: "We analyze and deliver the latest TikTok and social media trends in real-time",
+          icon: "chart-line"
+        },
+        {
+          title: "Practical Guides",
+          description: "We provide concrete strategies and actionable tips rather than just theory",
+          icon: "book-open"
+        },
+        {
+          title: "Creator-Focused",
+          description: "We create content that works for everyone from individual creators to major brands",
+          icon: "academic-cap"
+        },
+        {
+          title: "Data-Driven Analysis",
+          description: "We use advanced analytics and research methods to provide accurate and deep insights",
+          icon: "refresh"
+        }
+      ]
+    },
+    
+    // Authority & Credentials
+    authority: {
+      title: "Why Trust Us",
+      credentials: [
+        "Deep experience analyzing TikTok algorithm changes and trend patterns",
+        "Case studies and consulting for various creators and brands' growth strategies",
+        "Data-driven research and analytics for objective and accurate insights",
+        "Real-time monitoring of data across Reddit, TikTok, and other platforms",
+        "Specialized expertise in social media marketing and content strategy"
+      ],
+      stats: [
+        { number: "1000+", label: "Viral Videos Analyzed" },
+        { number: "Daily", label: "Trend Monitoring" },
+        { number: "Research", label: "Based Analysis" },
+        { number: "Global", label: "Trend Coverage" }
+      ]
+    },
+    
+    // Company Info
+    company: {
+      logo: "/logo.png",
+      founded: "2024",
+      location: "Global Digital",
+      description: "TokTips Daily is a platform specializing in analyzing and sharing TikTok and social media trends. We combine data research and expert insights to provide practical information that helps creators and brands succeed.",
+      certifications: [
+        { name: "TikTok Creator Fund Partner", image: "/cert/tiktok-partner.png" },
+        { name: "Social Media Analytics Certified", image: "/cert/analytics-cert.png" },
+        { name: "Content Strategy Expert", image: "/cert/content-cert.png" }
+      ]
+    },
+    
+    // SEO 설정
+    seo: {
+      title: "About - TokTips Daily",
+      description: "Learn about TokTips Daily, the platform providing TikTok trends and global social media insights for creators and brands.",
+      keywords: ["TikTok", "Social Media", "Trends", "Insights", "Content", "Marketing", "Creators"],
+      ogImage: "/images/about-og.jpg"
     }
   },
 

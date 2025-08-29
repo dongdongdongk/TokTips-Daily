@@ -5,11 +5,13 @@
 
 const nodemailer = require('nodemailer');
 const siteConfig = require('../../config/site.config');
+const TokenManager = require('../utils/token-manager');
 
 class EmailNotifier {
   constructor(logger) {
     this.logger = logger;
     this.transporter = null;
+    this.tokenManager = new TokenManager();
     this.initializeTransporter();
   }
 
@@ -102,6 +104,13 @@ class EmailNotifier {
 
     const blogUrl = `${siteConfig.site.url}/${blog.filename.replace('.md', '')}`;
     const redditUrl = sourceData.originalUrl;
+    
+    // 삭제 링크 생성
+    const deleteUrl = this.tokenManager.generateDeleteUrl(
+      siteConfig.site.url,
+      blog.filename,
+      title
+    );
 
     const html = `
     <!DOCTYPE html>
@@ -204,6 +213,17 @@ class EmailNotifier {
                 font-weight: bold;
                 margin: 10px 5px;
             }
+            .delete-link {
+                display: inline-flex;
+                align-items: center;
+                background: #f44336;
+                color: white;
+                padding: 12px 20px;
+                text-decoration: none;
+                border-radius: 6px;
+                font-weight: bold;
+                margin: 10px 5px;
+            }
             .stats {
                 background: #e8f5e8;
                 padding: 20px;
@@ -290,6 +310,9 @@ class EmailNotifier {
                 <a href="${blogUrl}" class="blog-link">
                     📖 생성된 블로그 보기
                 </a>
+                <a href="${deleteUrl}" class="delete-link">
+                    🗑️ 게시글 삭제하기
+                </a>
             </div>
 
             <div class="stats">
@@ -304,8 +327,17 @@ class EmailNotifier {
                     <li>생성된 블로그 글을 검토하고 필요시 수정</li>
                     <li>SEO 최적화 상태 확인</li>
                     <li>소셜 미디어 공유 준비</li>
+                    <li>품질이 낮거나 부적절한 경우 위 삭제 링크 사용</li>
                     <li>다음 Reddit 트렌드 모니터링</li>
                 </ul>
+            </div>
+
+            <div style="background: #fff3e0; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ff9800;">
+                <h3 style="color: #e65100; margin-bottom: 10px;">🗑️ 게시글 삭제 안내</h3>
+                <p style="margin: 0; font-size: 14px; color: #666;">
+                    위의 삭제 링크는 보안을 위해 <strong>7일 후 자동 만료</strong>됩니다. 
+                    게시글 품질이 만족스럽지 않거나 부적절한 내용이 포함된 경우 언제든 삭제할 수 있습니다.
+                </p>
             </div>
 
             <div class="footer">
@@ -343,12 +375,17 @@ class EmailNotifier {
 🔗 링크:
 - Reddit 원본: ${redditUrl}
 - 생성된 블로그: ${blogUrl}
+- 게시글 삭제: ${deleteUrl}
 
 📊 통계:
 - 카테고리: ${metadata.category}
 - 태그: ${metadata.tags.join(', ')}
 - 언어: 한국어
 - 작성자: ${metadata.author}
+
+🗑️ 게시글 삭제 안내:
+삭제 링크는 보안을 위해 7일 후 자동 만료됩니다. 
+게시글 품질이 만족스럽지 않거나 부적절한 내용이 포함된 경우 언제든 삭제할 수 있습니다.
 
 ---
 이 이메일은 WebMaker AI 블로그 자동 생성 시스템에서 발송되었습니다.
