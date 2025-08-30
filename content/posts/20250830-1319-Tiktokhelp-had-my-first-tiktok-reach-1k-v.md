@@ -23,7 +23,8 @@ One key reason your video might have hit 1K views is the power of the "For You P
 
 Another important step is engaging with your audience. When people comment on your video, reply to them. This interaction can encourage more people to engage with your content, boosting its visibility. Use popular hashtags that are relevant to your video to reach a wider audience. Remember, hashtags act like keywords, helping people find content they might be interested in.
 
-![Man using computer](https://images.unsplash.com/photo-1624957866366-b5ad9decb6b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3OTU0NDF8MHwxfHNlYXJjaHw0MXx8dmlyYWx8ZW58MXwwfHx8MTc1NjU1OTkzOXww&ixlib=rb-4.1.0&q=80&w=1080)
+![Man using computer](https://images.unsplash.com/photo-1488998427799-e3362cec87c3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=rb-4.1.0&q=80&w=1080)
+
 
 Exploring monetization options can be a great next step. Joining communities like MediaMaxxing can provide you with opportunities to earn money through your TikTok content. They offer instant monetization options, helping you turn your creativity into cash. This is especially beneficial if you're looking to make a career out of content creation.
 
