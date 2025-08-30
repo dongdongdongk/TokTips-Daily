@@ -399,11 +399,19 @@
       "upvotes": 4,
       "usedAt": "2025-08-30T01:16:20.297Z",
       "url": "https://reddit.com/r/Tiktokhelp/comments/1n33asy/has_anyone_noticed_this_with_the_algorithm/"
+    },
+    {
+      "id": "1n3sirj",
+      "title": "Had my first tiktok reach 1k views",
+      "subreddit": "Tiktokhelp",
+      "upvotes": 17,
+      "usedAt": "2025-08-30T13:18:55.745Z",
+      "url": "https://reddit.com/r/Tiktokhelp/comments/1n3sirj/had_my_first_tiktok_reach_1k_views/"
     }
   ],
   "lastCleanup": "2025-08-24T05:56:58Z",
   "stats": {
-    "totalUsed": 53,
+    "totalUsed": 54,
     "cleanupCount": 10
   }
 }
