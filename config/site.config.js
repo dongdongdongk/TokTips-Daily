@@ -529,7 +529,7 @@ const siteConfig = {
     seo: {
       title: "About - TokTips Daily",
       description: "Learn about TokTips Daily, the platform providing TikTok trends and global social media insights for creators and brands.",
-      keywords: ["TikTok", "Social Media", "Trends", "Insights", "Content", "Marketing", "Creators"],
+      keywords: ["TikTok", "Social Media", "Trends", "Content", "Creators"],
       ogImage: "/images/about-og.jpg"
     }
   },
